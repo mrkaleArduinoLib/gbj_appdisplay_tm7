@@ -50,7 +50,7 @@ Internal parameters are hard-coded in the library usually as enumerations and ha
 ## Constants
 * **VERSION**: Name and semantic version of the library.
 
-Other constants and enumerations are inherited from the parent library.
+Other constants, enumerations, result codes, and error codes are inherited from the parent library.
 
 
 <a id="interface"></a>
@@ -401,7 +401,7 @@ None
 ## getDisplayPtr()
 
 #### Description
-The method return the pointer to the internal object controlling the TM1637 display itself. It allows to utilize entire interface of the corresponding library `gbj_tm1637` without wrapping or mirroring it.
+The method returns the pointer to the internal object controlling the TM1637 display itself. It allows to utilize entire interface of the corresponding library `gbj_tm1637` without wrapping or mirroring it.
 
 #### Syntax
 	gbj_tm1637 *getDisplayPtr()

@@ -37,7 +37,7 @@
 class gbj_appdisplay_tm7 : gbj_appcore
 {
 public:
-  const String VERSION = "GBJ_APPDISPLAY_TM7 1.0.0";
+  const char *VERSION = "GBJ_APPDISPLAY_TM7 1.0.0";
 
   /*
     Constructor.

@@ -1,5 +1,4 @@
 #include "gbj_appdisplay_tm7.h"
-const String gbj_appdisplay_tm7::VERSION = "GBJ_APPDISPLAY_TM7 1.0.0";
 
 gbj_appdisplay_tm7::ResultCodes gbj_appdisplay_tm7::errorHandler(
   gbj_tm1637::ResultCodes errDisplay)

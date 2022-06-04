@@ -37,7 +37,7 @@
 class gbj_appdisplay_tm7 : gbj_appcore
 {
 public:
-  const char *VERSION = "GBJ_APPDISPLAY_TM7 1.0.0";
+  const char *VERSION = "GBJ_APPDISPLAY_TM7 1.1.0";
 
   /*
     Constructor.
@@ -139,25 +139,28 @@ public:
     timeStop();
   }
 
+  inline void printMsg(String msg, byte digit = 0)
+  {
+    display_->printText(msg, digit);
+    display_->display();
+  }
+
   inline void printText(String msg, byte digit = 0)
   {
     display_->displayOn();
-    display_->printText(msg, digit);
-    display_->display();
+    printMsg(msg, digit);
   }
 
   inline void printTextBlink(String msg, byte digit = 0)
   {
     blinkStart();
-    display_->printText(msg, digit);
-    display_->display();
+    printMsg(msg, digit);
   }
 
   inline void printTextBreath(String msg, byte digit = 0)
   {
     breathStart();
-    display_->printText(msg, digit);
-    display_->display();
+    printMsg(msg, digit);
   }
 
   inline void printError(unsigned int err)

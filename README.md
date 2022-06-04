@@ -66,6 +66,7 @@ Other constants, enumerations, result codes, and error codes are inherited from 
 * [printText()](#printText)
 * [printTextBlink()](#printTextEffect)
 * [printTextBreath()](#printTextEffect)
+* [printMsg()](#printMsg)
 * [printError()](#printError)
 * [printInit()](#printInit)
 * [printData()](#printData)
@@ -263,6 +264,37 @@ None
 
 #### See also
 [printText()](#printText)
+
+[Back to interface](#interface)
+
+
+<a id="printMsg"></a>
+
+## printMsg()
+
+#### Description
+The method updates the display with provided text starting from the provided digit at current display mode.
+
+#### Syntax
+	void printMsg(String msg, byte digit)
+
+#### Parameters
+* **msg**: Text to shown on the display.
+  * *Valid values*: digits, decimal point, space, minus sign
+  * *Default value*: none
+
+
+* **digit**: Number of digit counting from zero of the display where the showing of the text should start.
+  * *Valid values*: positive integers 0 ~ [digits - 1](#gbj_appdisplay_tm7)
+  * *Default value*: 0
+
+#### Returns
+None
+
+#### See also
+[printText()](#printText)
+
+[printTextBlink(), printTextBreath()](#printTextEffect)
 
 [Back to interface](#interface)
 
